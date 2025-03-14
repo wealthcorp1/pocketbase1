@@ -1,0 +1,13 @@
+name: pocketbase-app
+type: web
+regions:
+  - fra
+docker:
+  build_only: false
+  path: .
+  env:
+    - key: POCKETBASE_PORT
+      value: "8090"
+ports:
+  - target: 8090
+    published: 80
